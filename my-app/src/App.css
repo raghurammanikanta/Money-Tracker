@@ -1,0 +1,125 @@
+/* Reset and base styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(135deg, #232526 0%, #414345 100%);
+  color: #f3f3f3;
+  min-height: 100vh;
+  font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+  font-size: 2.2rem;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+form {
+  background: rgba(30, 30, 40, 0.95);
+  padding: 24px 28px;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+  margin-top: 20px;
+  width: 340px;
+}
+
+form input {
+  width: 100%;
+  background: #232526;
+  color: #f3f3f3;
+  border: 1.5px solid #4f8cff;
+  padding: 8px 10px;
+  border-radius: 6px;
+  margin-bottom: 12px;
+  font-size: 1rem;
+  transition: border 0.2s;
+}
+
+form input:focus {
+  border-color: #00e6d0;
+  outline: none;
+}
+
+form .basic {
+  display: flex;
+  gap: 10px;
+}
+
+form button {
+  width: 100%;
+  margin-top: 8px;
+  border: none;
+  border-radius: 6px;
+  padding: 10px;
+  background: linear-gradient(90deg, #4f8cff 0%, #00e6d0 100%);
+  color: #232526;
+  font-weight: bold;
+  font-size: 1.1rem;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transition: background 0.2s, color 0.2s;
+}
+
+form button:hover {
+  background: linear-gradient(90deg, #00e6d0 0%, #4f8cff 100%);
+  color: #fff;
+}
+
+.transactions {
+  margin-top: 24px;
+  width: 340px;
+  background: rgba(30, 30, 40, 0.95);
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+  padding: 18px 22px;
+}
+
+.transaction {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 10px 0;
+  border-top: 1px solid #444;
+  transition: background 0.2s;
+}
+
+.transaction:first-child {
+  border-top: none;
+}
+
+.transaction:hover {
+  background: rgba(79, 140, 255, 0.08);
+  border-radius: 6px;
+}
+
+.transaction .name {
+  font-size: 1.15rem;
+  font-weight: 500;
+  color: #fff;
+}
+
+.transaction .description {
+  font-size: 0.98rem;
+  color: #b0b0b0;
+  margin-top: 2px;
+}
+
+.red {
+  color: #ff4d4f;
+  font-weight: bold;
+}
+
+.green {
+  color: #00e676;
+  font-weight: bold;
+}
